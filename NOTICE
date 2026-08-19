@@ -1,0 +1,73 @@
+Уведомления о стороннем программном обеспечении
+
+Приложение BASYS собрано с использованием перечисленных ниже компонентов.
+Их правообладатели сохраняют свои права; лицензии MIT и BSD требуют, чтобы
+уведомление об авторских правах воспроизводилось вместе с распространяемым
+продуктом. Этот файл выполняет это требование.
+
+Список отражает состав сборки на 19 августа 2026 года и обновляется вместе
+с приложением.
+
+────────────────────────────────────────────────────────────────────────────
+Лицензия MIT
+
+  React Native 0.86.2 — Copyright (c) Meta Platforms, Inc. and affiliates
+  Hermes (в составе React Native) — Copyright (c) Meta Platforms, Inc.
+  React 19.2.3 — Copyright (c) Meta Platforms, Inc. and affiliates
+  Expo SDK 57 — Copyright (c) 650 Industries, Inc. (Expo)
+    expo, expo-constants, expo-crypto, expo-file-system, expo-font,
+    expo-router, expo-secure-store, expo-sharing, expo-splash-screen,
+    expo-sqlite, expo-status-bar, expo-system-ui, expo-updates,
+    @expo/metro-runtime
+  react-native-gesture-handler 2.32.0 — Copyright (c) Software Mansion
+  react-native-reanimated 4.5.1 — Copyright (c) Software Mansion
+  react-native-screens 4.26.2 — Copyright (c) Software Mansion
+  react-native-worklets 0.10.1 — Copyright (c) Software Mansion
+  react-native-safe-area-context 5.7.0 — Copyright (c) Th3rd Wave
+  react-native-svg 15.15.4 — Copyright (c) Horcrux
+
+  Разрешение настоящим предоставляется безвозмездно любому лицу, получившему
+  копию данного программного обеспечения и сопутствующей документации,
+  осуществлять операции с программным обеспечением без ограничений, включая
+  неограниченное право на использование, копирование, изменение, слияние,
+  публикацию, распространение, сублицензирование и продажу копий, а также
+  лицам, которым предоставляется данное программное обеспечение, при
+  соблюдении следующих условий: указанное выше уведомление об авторском праве
+  и данное уведомление о разрешении должны быть включены во все копии или
+  значимые части данного программного обеспечения.
+
+  ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО
+  ГАРАНТИЙ.
+
+────────────────────────────────────────────────────────────────────────────
+Лицензия Apache 2.0
+
+  Drizzle ORM — Copyright (c) Drizzle Team
+
+  Полный текст: https://www.apache.org/licenses/LICENSE-2.0
+
+────────────────────────────────────────────────────────────────────────────
+Лицензия BSD
+
+  SQLCipher — Copyright (c) Zetetic LLC
+  Полный текст: https://github.com/sqlcipher/sqlcipher/blob/master/LICENSE
+
+  OpenSSL (криптографическая часть SQLCipher) — Copyright (c) The OpenSSL
+  Project. Полный текст: https://www.openssl.org/source/license.html
+
+────────────────────────────────────────────────────────────────────────────
+Общественное достояние
+
+  SQLite — авторы передали код в общественное достояние.
+  https://www.sqlite.org/copyright.html
+
+────────────────────────────────────────────────────────────────────────────
+Шрифты — SIL Open Font License 1.1
+
+  IBM Plex Sans, IBM Plex Mono — Copyright (c) IBM Corp.
+  Полный текст: https://scripts.sil.org/OFL
+
+────────────────────────────────────────────────────────────────────────────
+
+Если вы правообладатель и считаете, что уведомление неполно или неточно,
+напишите в Issues этого репозитория — исправим.
