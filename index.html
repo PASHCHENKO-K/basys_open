@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#14181C" />
+    <meta name="robots" content="noindex" />
+    <title>BASYS — установка</title>
+
+    <!--
+      Ни одного внешнего запроса, кроме ./latest.json (ТЗ v0.1, «Решения»).
+      Ни шрифтов, ни аналитики, ни библиотек: страницу открывают с телефона,
+      часто на плохой сети, и каждый внешний адрес — ещё один способ показать
+      пустой экран вместо кнопки. Плюс страница проекта, у которого «ничего
+      никуда не отправляется», не должна начинать знакомство с запроса
+      на чужой домен.
+    -->
+    <style>
+      :root {
+        --ink: #14181c;
+        --raised: #1d2329;
+        --line: #242b32;
+        --text: #f0f2f4;
+        --muted: #9aa3ab;
+        --amber: #f2a93b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 24px 20px 64px;
+        background: var(--ink);
+        color: var(--text);
+        font: 17px/1.55 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      main {
+        max-width: 34rem;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-size: 28px;
+        letter-spacing: 0.01em;
+      }
+
+      .lead {
+        margin: 0 0 28px;
+        color: var(--muted);
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 21px;
+      }
+
+      section[hidden] {
+        display: none;
+      }
+
+      .card {
+        background: var(--raised);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 20px;
+        margin: 0 0 20px;
+      }
+
+      a.button {
+        display: block;
+        padding: 16px 20px;
+        border-radius: 12px;
+        background: var(--amber);
+        color: #14181c;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      a.button.quiet {
+        background: transparent;
+        border: 1px solid var(--line);
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .under {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 15px;
+        text-align: center;
+      }
+
+      ol {
+        margin: 0;
+        padding-left: 22px;
+      }
+
+      ol li {
+        margin: 0 0 14px;
+      }
+
+      ol li:last-child {
+        margin-bottom: 0;
+      }
+
+      .warn {
+        border-left: 3px solid var(--amber);
+        padding-left: 14px;
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .warn strong {
+        color: var(--text);
+      }
+
+      .aside {
+        margin: 28px 0 0;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .aside a,
+      .warn a {
+        color: var(--amber);
+      }
+
+      details {
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      details code {
+        display: block;
+        margin-top: 8px;
+        word-break: break-all;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      summary {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>BASYS</h1>
+      <p class="lead">Дневник силовых тренировок. Работает без интернета — в зале сеть не нужна.</p>
+
+      <!-- Android: файл. -->
+      <section id="android" hidden>
+        <div class="card">
+          <a class="button" id="apk" href="https://github.com/PASHCHENKO-K/basys_open/releases/latest"
+            >Скачать BASYS</a
+          >
+          <p class="under" id="apk-under">Нужен Android 7.0 или новее</p>
+        </div>
+
+        <div class="card">
+          <h2>Что скажет телефон</h2>
+          <!--
+            Люди застревают не на «скачать», а на трёх подряд предупреждениях,
+            каждое из которых выглядит как «вы делаете что-то плохое». Поэтому
+            шаги — словами Android, и каждое предупреждение названо ДО того,
+            как человек его увидит.
+          -->
+          <ol>
+            <li><strong>Скачайте файл.</strong> Лучше по Wi-Fi.</li>
+            <li>
+              <strong>«Файл может нанести вред устройству»</strong> — так браузер говорит про любую
+              установку не из магазина. Нажмите «Всё равно скачать».
+            </li>
+            <li>
+              <strong>Откройте скачанный файл.</strong> Появится «установка приложений из этого
+              источника заблокирована» → «Настройки» → разрешить. Спросят один раз.
+            </li>
+            <li>
+              <strong>«Приложение неизвестного разработчика»</strong> → «Подробнее» → «Всё равно
+              установить». Play Защита не знает в лицо приложения не из магазина — это ожидаемо.
+            </li>
+            <li>
+              <strong>Xiaomi, Redmi, POCO.</strong> MIUI добавляет свою проверку и иногда просит
+              выключить «Отправлять на проверку»: Настройки → Пароли и безопасность →
+              Конфиденциальность.
+            </li>
+          </ol>
+
+          <p class="warn">
+            <strong>Обновление — поверх, ничего не удаляя.</strong> Записи останутся: это то же
+            приложение и тот же ключ подписи. Удалить и поставить заново — значит стереть журнал
+            тренировок.
+          </p>
+        </div>
+
+        <p class="aside">
+          На iPhone или компьютере это же приложение открывается в браузере:
+          <a href="./app/">откройте BASYS</a>.
+        </p>
+      </section>
+
+      <!-- iPhone: экран «Домой». -->
+      <section id="ios" hidden>
+        <div class="card">
+          <a class="button" href="./app/">Открыть BASYS</a>
+          <p class="under">Дальше — три шага, чтобы приложение работало в зале</p>
+        </div>
+
+        <div class="card">
+          <h2>Установка на экран «Домой»</h2>
+          <ol>
+            <li>
+              <strong>Откройте эту страницу в Safari.</strong> В других браузерах на iPhone кнопки
+              «На экран „Домой“» нет.
+            </li>
+            <li><strong>«Поделиться» → «На экран „Домой“».</strong></li>
+            <li><strong>Запускайте с экрана «Домой»</strong>, а не из Safari.</li>
+          </ol>
+
+          <p class="warn">
+            <strong>Третий шаг обязателен.</strong> Открытое вкладкой приложение не работает без
+            интернета — и заметить это можно только в зале, посреди занятия.
+          </p>
+
+          <p class="warn">
+            <strong>Делайте копию.</strong> Очистка данных сайта в настройках Safari стирает журнал
+            тренировок. Копия — внутри приложения: «Система» → «Данные».
+          </p>
+        </div>
+
+        <p class="aside">
+          Для Android есть отдельное приложение файлом —
+          <a id="apk-ios" href="https://github.com/PASHCHENKO-K/basys_open/releases/latest"
+            >ссылку можно переслать</a
+          >.
+        </p>
+      </section>
+
+      <!-- Компьютер и всё прочее. -->
+      <section id="desktop" hidden>
+        <div class="card">
+          <a class="button" href="./app/">Открыть BASYS</a>
+          <p class="under">Работает прямо в браузере</p>
+        </div>
+
+        <div class="card">
+          <h2>На телефон</h2>
+          <p style="margin: 0 0 16px; color: var(--muted)">
+            Android — приложение файлом. iPhone — эта же страница в Safari, оттуда «Поделиться» → «На
+            экран „Домой“».
+          </p>
+          <a class="button quiet" id="apk-desktop"
+            href="https://github.com/PASHCHENKO-K/basys_open/releases/latest"
+            >Скачать файл для Android</a
+          >
+          <p class="under" id="apk-desktop-under"></p>
+
+          <p class="warn">
+            <strong>Журналы не связаны.</strong> Браузер на компьютере и приложение на телефоне ведут
+            свои записи, и свести их пока нечем. Выберите одно место для журнала.
+          </p>
+        </div>
+      </section>
+
+      <details id="details" hidden>
+        <summary>Подробности сборки</summary>
+        <code id="details-body"></code>
+      </details>
+    </main>
+
+    <script>
+      (function () {
+        'use strict';
+
+        /*
+          Определение системы — по userAgent, и ошибка здесь не опасна: экраны
+          отличаются порядком, а не наличием. Худшее, что случится, — человек
+          увидит не свой и спустится на два абзаца.
+
+          iPad с iPadOS 13+ представляется Macintosh, поэтому вторая половина
+          условия: тач-точки есть только у планшета.
+        */
+        var ua = navigator.userAgent;
+        var ios = /iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+        var android = /Android/.test(ua);
+        var which = ios ? 'ios' : android ? 'android' : 'desktop';
+
+        document.getElementById(which).hidden = false;
+
+        var mb = function (bytes) {
+          return Math.round(bytes / 1048576);
+        };
+
+        /*
+          Манифест — тот же файл, что читает приложение. Значит при выпуске новой
+          версии страницу править не надо, и разойтись с приложением она не может
+          по построению.
+
+          Отказ чтения не ломает страницу: ссылки уже стоят на `releases/latest`,
+          и без манифеста они остаются рабочими. Версия и размер в этом случае
+          не показываются вовсе, а не подставляются наугад.
+        */
+        fetch('./latest.json', { cache: 'no-store' })
+          .then(function (response) {
+            if (!response.ok) throw new Error(String(response.status));
+            return response.json();
+          })
+          .then(function (m) {
+            if (!m || typeof m.url !== 'string' || typeof m.version !== 'string') return;
+
+            var size = typeof m.bytes === 'number' && m.bytes > 0 ? ' · ' + mb(m.bytes) + ' МБ' : '';
+            var ids = ['apk', 'apk-ios', 'apk-desktop'];
+            for (var i = 0; i < ids.length; i++) {
+              var link = document.getElementById(ids[i]);
+              if (link) link.href = m.url;
+            }
+
+            var button = document.getElementById('apk');
+            if (button) button.textContent = 'Скачать BASYS ' + m.version + size;
+
+            /*
+              Размер уже стоит на кнопке — здесь только требование к системе.
+              Повторять число дважды значит просить прочитать его дважды.
+            */
+            var under = document.getElementById('apk-under');
+            if (under) under.textContent = 'Нужен Android 7.0 или новее';
+
+            var desktopUnder = document.getElementById('apk-desktop-under');
+            if (desktopUnder) desktopUnder.textContent = 'BASYS ' + m.version + size;
+
+            /*
+              sha256 нужен одному человеку из десяти и мешает девяти — поэтому
+              в свёрнутом блоке, вместе с точным именем файла и номером сборки.
+            */
+            var body = document.getElementById('details-body');
+            if (body) {
+              body.textContent =
+                'версия ' +
+                m.version +
+                ', сборка ' +
+                String(m.versionCode) +
+                ', нативная линия ' +
+                String(m.runtimeVersion) +
+                '\nsha256 ' +
+                String(m.sha256);
+              document.getElementById('details').hidden = false;
+            }
+          })
+          .catch(function () {
+            var under = document.getElementById('apk-under');
+            if (under) under.textContent = 'Откройте последний релиз и скачайте файл .apk';
+          });
+      })();
+    </script>
+  </body>
+</html>
