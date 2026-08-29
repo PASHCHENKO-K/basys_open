@@ -1,8 +1,8 @@
 {
-  "runtimeVersion": "1",
-  "version": "0.2.0",
-  "url": "https://github.com/PASHCHENKO-K/basys_open/releases/download/v0.2.0-5/basys-0.2.0-5.apk",
-  "versionCode": 5,
-  "sha256": "00131f68cdec266e0440068a146ee9af2abc70871bac58db40a25d5d877a1dea",
-  "bytes": 74909125
+  "runtimeVersion": "2",
+  "version": "0.3.0",
+  "url": "https://github.com/PASHCHENKO-K/basys_open/releases/download/v0.3.0-6/basys-0.3.0-6.apk",
+  "versionCode": 6,
+  "sha256": "1f42719648f93682a42cbb94965752107c085ccd845bdcb6bb5c243042aab5c5",
+  "bytes": 75121609
 }
