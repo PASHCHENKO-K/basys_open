@@ -15,7 +15,7 @@
 */
 
 /** Подставляется сборкой: отпечаток содержимого вывода. */
-const VERSION = "basys-9a9de3639a48725d";
+const VERSION = "0.4.1+basys-1ce4d23a206ff749";
 
 /** Подставляется сборкой: всё, что должно работать без сети. */
 const PRECACHE = [
@@ -26,11 +26,12 @@ const PRECACHE = [
   "/basys_open/app/(tabs)/system/data",
   "/basys_open/app/(tabs)/system/",
   "/basys_open/app/(tabs)/system/rules",
+  "/basys_open/app/(tabs)/system/session",
   "/basys_open/app/(tabs)/system/summary",
   "/basys_open/app/(tabs)/system/tickets",
   "/basys_open/app/+not-found",
   "/basys_open/app/_expo/.routes.json",
-  "/basys_open/app/_expo/static/js/web/entry-7ae9ebf6c112dfe450c482673d44b228.js",
+  "/basys_open/app/_expo/static/js/web/entry-8608a6db5b9668cfba07b089e87ab3f3.js",
   "/basys_open/app/_sitemap",
   "/basys_open/app/apple-touch-icon.png",
   "/basys_open/app/assets/__node_modules/@expo-google-fonts/ibm-plex-mono/400Regular/IBMPlexMono_400Regular.b112f77f65b1766764ee122703ebdcd0.ttf",
@@ -71,10 +72,10 @@ const PRECACHE = [
   "/basys_open/app/icon-maskable-512.png",
   "/basys_open/app/",
   "/basys_open/app/manifest.webmanifest",
+  "/basys_open/app/program/description",
   "/basys_open/app/program/",
   "/basys_open/app/program/one",
   "/basys_open/app/program/priorities",
-  "/basys_open/app/program/schedule",
   "/basys_open/app/program/switch",
   "/basys_open/app/response/analysis",
   "/basys_open/app/response/",
@@ -92,6 +93,7 @@ const PRECACHE = [
   "/basys_open/app/system/data",
   "/basys_open/app/system/",
   "/basys_open/app/system/rules",
+  "/basys_open/app/system/session",
   "/basys_open/app/system/summary",
   "/basys_open/app/system/tickets"
 ];
