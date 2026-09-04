@@ -15,7 +15,7 @@
 */
 
 /** Подставляется сборкой: отпечаток содержимого вывода. */
-const VERSION = "0.4.8+basys-8a46457085c222c8";
+const VERSION = "0.4.9+basys-c869d3043daf3e19";
 
 /** Подставляется сборкой: всё, что должно работать без сети. */
 const PRECACHE = [
@@ -31,7 +31,7 @@ const PRECACHE = [
   "/basys_open/app/(tabs)/system/tickets",
   "/basys_open/app/+not-found",
   "/basys_open/app/_expo/.routes.json",
-  "/basys_open/app/_expo/static/js/web/entry-bbf75d3ec4a20c255730e4bff5ed82bf.js",
+  "/basys_open/app/_expo/static/js/web/entry-e27d6488089723dd591a6ab4d03dd0ee.js",
   "/basys_open/app/_sitemap",
   "/basys_open/app/apple-touch-icon.png",
   "/basys_open/app/assets/__node_modules/@expo-google-fonts/ibm-plex-mono/400Regular/IBMPlexMono_400Regular.b112f77f65b1766764ee122703ebdcd0.ttf",
