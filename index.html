@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#14181C" />
+    <meta name="theme-color" content="#0F1915" />
     <meta name="robots" content="noindex" />
     <title>BASYS — установка</title>
 
@@ -17,12 +17,12 @@
     -->
     <style>
       :root {
-        --ink: #14181c;
-        --raised: #1d2329;
-        --line: #242b32;
-        --text: #f0f2f4;
-        --muted: #9aa3ab;
-        --amber: #f2a93b;
+        --ink: #0f1915;
+        --raised: #16261f;
+        --line: #1c2e26;
+        --text: #edf4f1;
+        --muted: #8ca89c;
+        --accent: #5fcfa4;
       }
 
       * {
@@ -75,8 +75,8 @@
         display: block;
         padding: 16px 20px;
         border-radius: 12px;
-        background: var(--amber);
-        color: #14181c;
+        background: var(--accent);
+        color: #0f1915;
         font-weight: 700;
         font-size: 18px;
         text-align: center;
@@ -111,7 +111,7 @@
       }
 
       .warn {
-        border-left: 3px solid var(--amber);
+        border-left: 3px solid var(--accent);
         padding-left: 14px;
         margin: 18px 0 0;
         color: var(--muted);
@@ -132,7 +132,7 @@
 
       .aside a,
       .warn a {
-        color: var(--amber);
+        color: var(--accent);
       }
 
       details {
@@ -307,6 +307,35 @@
           </p>
         </div>
       </section>
+
+      <div class="card" id="feedback">
+        <h2>Если что-то не так</h2>
+        <p>
+          Замечания, вопросы и «у меня не работает» — боту
+          <a href="https://t.me/basys_training_bot">@basys_training_bot</a>.
+          Это постоянный адрес: не нужно искать автора в контактах, а автору —
+          раздавать личный аккаунт.
+        </p>
+        <p class="under">
+          Бот читает сообщения не сразу — раз в час, пока компьютер включён.
+          Замечание не потеряется, но ответ придёт не через минуту.
+        </p>
+        <!--
+          ⚠ Подписка отдельной ссылкой с нагрузкой `?start=subscribe`, а не
+          тем же адресом, что выше. Голое открытие бота согласием не считается:
+          адрес публичен, и человек, зашедший спросить, писем не просил.
+        -->
+        <p>
+          Хотите получать <b>письма о выпусках</b> — что поменялось и как
+          поставить? Откройте
+          <a href="https://t.me/basys_training_bot?start=subscribe">подписку в Telegram</a>
+          и нажмите «Начать».
+        </p>
+        <p class="under">
+          Бот подтвердит не сразу — по той же причине, что и выше. Отписаться
+          можно в любой момент, командой <code>/unsubscribe</code>.
+        </p>
+      </div>
 
       <details id="details" hidden>
         <summary>Подробности сборки</summary>
