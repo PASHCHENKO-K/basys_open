@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#0F1915" />
     <meta name="robots" content="noindex" />
-    <title>BASYS — установка</title>
+    <title>Datum — установка</title>
 
     <!--
       Ни одного внешнего запроса, кроме ./latest.json (ТЗ v0.1, «Решения»).
@@ -157,14 +157,14 @@
 
   <body>
     <main>
-      <h1>BASYS</h1>
+      <h1>Datum</h1>
       <p class="lead">Дневник силовых тренировок. Работает без интернета — в зале сеть не нужна.</p>
 
       <!-- Android: файл. -->
       <section id="android" hidden>
         <div class="card">
           <a class="button" id="apk" href="https://github.com/PASHCHENKO-K/basys_open/releases/latest"
-            >Скачать BASYS</a
+            >Скачать Datum</a
           >
           <p class="under" id="apk-under">Нужен Android 7.0 или новее</p>
         </div>
@@ -201,7 +201,7 @@
         </div>
 
         <div class="card">
-          <h2>Если BASYS уже стоит</h2>
+          <h2>Если Datum уже стоит</h2>
           <p style="margin: 0 0 14px">
             Скачайте файл той же кнопкой и откройте его. Android поставит новую версию
             <strong>поверх</strong> старой, и всё останется на месте: тренировки, замеры, настройки.
@@ -225,14 +225,14 @@
 
         <p class="aside">
           На iPhone или компьютере это же приложение открывается в браузере:
-          <a href="./app/">откройте BASYS</a>.
+          <a href="./app/">откройте Datum</a>.
         </p>
       </section>
 
       <!-- iPhone: экран «Домой». -->
       <section id="ios" hidden>
         <div class="card">
-          <a class="button" href="./app/">Открыть BASYS</a>
+          <a class="button" href="./app/">Открыть Datum</a>
           <p class="under">Дальше — три шага, чтобы приложение работало в зале</p>
         </div>
 
@@ -265,7 +265,7 @@
         </div>
 
         <div class="card">
-          <h2>Если BASYS уже на экране «Домой»</h2>
+          <h2>Если Datum уже на экране «Домой»</h2>
           <p style="margin: 0">
             Ничего делать не надо. Обновления приходят сами и встают при следующем открытии —
             ни файла, ни кабеля. Заново добавлять на «Домой» тоже не нужно.
@@ -283,7 +283,7 @@
       <!-- Компьютер и всё прочее. -->
       <section id="desktop" hidden>
         <div class="card">
-          <a class="button" href="./app/">Открыть BASYS</a>
+          <a class="button" href="./app/">Открыть Datum</a>
           <p class="under">Работает прямо в браузере</p>
         </div>
 
@@ -391,7 +391,7 @@
             }
 
             var button = document.getElementById('apk');
-            if (button) button.textContent = 'Скачать BASYS ' + m.version + size;
+            if (button) button.textContent = 'Скачать Datum ' + m.version + size;
 
             /*
               Размер уже стоит на кнопке — здесь только требование к системе.
@@ -401,7 +401,7 @@
             if (under) under.textContent = 'Нужен Android 7.0 или новее';
 
             var desktopUnder = document.getElementById('apk-desktop-under');
-            if (desktopUnder) desktopUnder.textContent = 'BASYS ' + m.version + size;
+            if (desktopUnder) desktopUnder.textContent = 'Datum ' + m.version + size;
 
             /*
               sha256 нужен одному человеку из десяти и мешает девяти — поэтому
