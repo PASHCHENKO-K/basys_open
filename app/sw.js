@@ -15,13 +15,14 @@
 */
 
 /** Подставляется сборкой: отпечаток содержимого вывода. */
-const VERSION = "0.4.12+basys-d65012551a04a884";
+const VERSION = "0.4.13+basys-97a125a9857fff75";
 
 /** Подставляется сборкой: всё, что должно работать без сети. */
 const PRECACHE = [
   "/basys_open/app/(tabs)/food/",
   "/basys_open/app/(tabs)/gym/",
   "/basys_open/app/(tabs)/",
+  "/basys_open/app/(tabs)/system/about",
   "/basys_open/app/(tabs)/system/appearance",
   "/basys_open/app/(tabs)/system/data",
   "/basys_open/app/(tabs)/system/",
@@ -31,7 +32,7 @@ const PRECACHE = [
   "/basys_open/app/(tabs)/system/tickets",
   "/basys_open/app/+not-found",
   "/basys_open/app/_expo/.routes.json",
-  "/basys_open/app/_expo/static/js/web/entry-9970da3d158431c69c79c36977c72cfa.js",
+  "/basys_open/app/_expo/static/js/web/entry-5c858759ea5f6d992679418475d42582.js",
   "/basys_open/app/_sitemap",
   "/basys_open/app/apple-touch-icon.png",
   "/basys_open/app/assets/__node_modules/@expo-google-fonts/ibm-plex-mono/400Regular/IBMPlexMono_400Regular.b112f77f65b1766764ee122703ebdcd0.ttf",
@@ -89,6 +90,7 @@ const PRECACHE = [
   "/basys_open/app/session/run",
   "/basys_open/app/session/summary",
   "/basys_open/app/sql-wasm-browser.wasm",
+  "/basys_open/app/system/about",
   "/basys_open/app/system/appearance",
   "/basys_open/app/system/data",
   "/basys_open/app/system/",
